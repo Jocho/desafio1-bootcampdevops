@@ -60,7 +60,12 @@
                 </li>
                 <li>
                     <h3>Cómo puedo moverme a un commit especifico?</h3>
-                    [Pon tu respuesta]
+                    [Para moverme a un commit especifico es necesario primeramente conocer el hash (codigo alfanumerico) con el que fue regustrado el commit. Para 
+                    conocer el hash el comando que se utiliza es git log. El hash es la secuencia alfanumerica que viene luego de la palabra commit.  Se puede colocar 
+                    el codigo entero o simplemente dándole los primeros caracteres del código Git es lo suficientemente inteligente como para figurarse cual es la 
+                    confirmación de cambios (commit) deseada. Es necesario teclear por lo menos 4 caracteres y estos han de ser no ambiguos --es decir, debe existir 
+                    un solo objeto en el repositorio cuyo código comience por dicho trozo inicial. De esta forma para para ir hacia el commit especifico se utiliza 
+                    el comando git checkout + hash. Ejemplo: git checkout 85a8e78653a0f9e6f35fc439fa93a6c91f306d6e o git checkout 85a8e78.]
                 </li>
                 <li>
                     <h3>Cómo puedo borrar una rama?</h3>
