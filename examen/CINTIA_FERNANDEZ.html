@@ -1,0 +1,115 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>.: Examen :.</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+</head>
+
+<body>
+    <div id="container">
+        <div id="cabecera">
+            <img id="logo"
+                src="https://cdn2.iconfinder.com/data/icons/seo-and-website/100/SEO_blog_optimation_article-64.png" />
+            Examen
+            <span id="tagline">Git y Github</span>
+        </div>
+        <div id="post">
+            <h1>Alumn@: [Cintia Fernandez]</h1>
+            <ol>
+                <li>
+                    <h3>Que es un sistema de control de versiones?</h3>
+                    [Es un sistema o software que permite tener un control sobre los cambios que se van realizando sobre uno o mas archivos
+                    a lo largo de la creación de un proyecto. De modo tal que si alguna version posterior tiene dificultades, por ejemplo, puedas
+                    tener la posibilidad de volver a una version anterior que era funcional.]
+                </li>
+                <li>
+                    <h3>Cual es la diferencia entre git y github?</h3>
+                    [Git es el sistema de control de versiones, que es un software permite tener un control de cambios sobre el código fuente de una aplicación
+                    mientras que GitHub GitHub es una página que ofrece un grupo de servicios que facilitan el uso de Git, como por ejemplo hosting de proyectos, 
+                    facilidades de colaboración, reviews de código, perfiles personales, pull requests, issues entre lo más destacado.]
+                </li>
+                <li>
+                    <h3>Cómo creo una rama en git?</h3>
+                    [La forma de crear una nueva rama es con el comando git branch. Ejemplo: git branch nombre_de_la_rama. Para movernos a esa rama se usa el 
+                    comando git checkout y el nombre de la rama. Ejemplo: git checkout nombre_de_la_rama. 
+                    Una atajo para poder crear la rama y movernos luego de crearla es: git checkout -b nombre_de_la_rama.]
+                </li>
+                <li>
+                    <h3>Cómo clono un repositorio?</h3>
+                    [Dentro de la URL del repositorio de GitHub seleccione el boton verde que dice code, a continuacion aparecerán dos opciones, clone y download zip,
+                    seleccionar clone HTTPS y copiar. Desde la terminal y situados en la carpeta donde vamos a clonar el repositorio, ejecutamos el comando git clone + dirección del repositorio
+                    que copiamos recientemente.
+                </li>
+                <li>
+                    <h3>Cómo puedo bajar los ultimos cambios de un repositorio?</h3>
+                    [Para mantener actualizado el repositorio, el comando que se utiliza para traer los ultimos cambios es git pull + nombre_de_la_rama. Ejemplo: git pull origin master o git pull 
+                    origin nombre_de_la_rama.
+                </li>
+                <li>
+                    <h3>Cómo puedo generar un tag?</h3>
+                    [El comando para generar un tag es: git tag + nombre_del_tag. Ejemplo: git tag v1.0.0. 
+                    Adicionalemente se puede dejar un comentario de igual manera que se realiza un commit. Ejemplo: git tag -a v1.0.0 -m "Esta es la version 1.0.0"]
+                </li>
+                <li>
+                    <h3>Cómo hago una mezcla de ramas?</h3>
+                    [Para mezclar dos ramas hay dos formas: git merge y git rebase. El más utilizado es git merge debido a su estabilidad en materia de reducción de 
+                     conflictos. Utilizar rebase nos puede ayudar a evitar conflictos siempre que se aplique sobre commits que están en local y no han sido subidos a 
+                     ningún repositorio remoto. Si no se tiene precaución otra persona podría utilizar cambios dañados.
+                     Ejemplo de mezcla de ramas: git checkout master y git merge nombre_de_la_rama.]
+                </li>
+                <li>
+                    <h3>Cómo puedo moverme a un commit especifico?</h3>
+                    [Para moverme a un commit especifico es necesario primeramente conocer el hash (codigo alfanumerico) con el que fue regustrado el commit. Para 
+                    conocer el hash el comando que se utiliza es git log. El hash es la secuencia alfanumerica que viene luego de la palabra commit.  Se puede colocar 
+                    el codigo entero o simplemente dándole los primeros caracteres del código Git es lo suficientemente inteligente como para figurarse cual es la 
+                    confirmación de cambios (commit) deseada. Es necesario teclear por lo menos 4 caracteres y estos han de ser no ambiguos --es decir, debe existir 
+                    un solo objeto en el repositorio cuyo código comience por dicho trozo inicial. De esta forma para para ir hacia el commit especifico se utiliza 
+                    el comando git checkout + hash. Ejemplo: git checkout 85a8e78653a0f9e6f35fc439fa93a6c91f306d6e o git checkout 85a8e78.]
+                </li>
+                <li>
+                    <h3>Cómo puedo borrar una rama?</h3>
+                    [Git no permite eliminar una rama en la que te encuentres actualmente. Primero necesitas moverte a una rama diferente. Los comandos que se pueden
+                    utilizar para eliminar una rama son: git branch -d RAMA-A-ELIMINAR o git branch --delete RAMA-A-ELIMINAR]
+                </li>
+                <li>
+                    <h3>Cómo puedo borrar un tag?</h3>
+                    [Dependiendo de si el tag a eliminar esta en local o en el servidor, los comandos son. Para eliminar localmente: git tag -d nombreDeltag. Ejemplo 
+                    git tag -d v1.0.0. Para eliminar en el servidor: git push -d origin nombre_del_tag. Ejemplo: git push origin v1.0.0.
+                    Se puede reemplazar -d por --delete]
+                </li>
+                <li>
+                    <h3>Cómo puedo ver los cambios que estan por enviarse al repositorio?</h3>
+                    [ git status lista el nombre de los archivos que fueron modificados (y sirve para elegir tambien que archivos agregar con git add), 
+                    y git diff te muestra las líneas exactas que fueron añadidas y eliminadas, es decir, el parche.]
+                </li>
+                <li>
+                    <h3>Para que sirve el comando <em>git remote -v?</em></h3>
+                    [Sirve para obtener la dirección del repositorio]
+                </li>
+                <li>
+                    <h3>Cómo le digo a git cual es mi email y usuario?</h3>
+                    [Los ajustes de configuración de Git son a través del comando git config y user con su respectiva extensión. En este caso para 
+                    email seria, por ejemplo, git config --global user.email cintiafernandez@example.com y para el usuario git config --global user.name "Cintia Fernandez" ]
+                </li>
+                <li>
+                    <h3>Cuales son los pasos para conectar git con github?</h3>
+                    [Paso 1: Descarga e instala la última versión de Git
+                     Paso 2: Configura tu nombre de usuario en Git
+                     Paso 3: Configura tu dirección de correo electrónico de confirmación en Git
+                     Paso 4: Puedes configurar la Autenticación con GitHub desde Git. Puede conectar por HTTPS (recomendado) o SSH. ]
+                </li>
+                <li>
+                    <h3>Cómo puedo crear un alias en git?</h3>
+                    [Como hemos mencionado para acceder a las configuraciones debemos utilizar el comando git config. En este caso utilizaremos
+                    git config --global alias.[alias] "[comando]". Ejemplo: git config --global alias.st status. Este comando creará un alias para git status]
+                </li>
+            </ol>
+        </div>
+        <div id="footer">
+            <img height="50" src="https://repository-images.githubusercontent.com/242781977/c5441500-56ee-11ea-99dc-6a054dbe381d" alt="ticsacademy">
+        </div>
+    </div>
+</body>
+
+</html>
