@@ -1,0 +1,88 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>.: Examen :.</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+</head>
+
+<body>
+    <div id="container">
+        <div id="cabecera">
+            <img id="logo"
+                src="https://cdn2.iconfinder.com/data/icons/seo-and-website/100/SEO_blog_optimation_article-64.png" />
+            Examen
+            <span id="tagline">Git y Github</span>
+        </div>
+        <div id="post">
+            <h1>Alumn@: [Carlos Rivadeneira]</h1>
+            <ol>
+                <li>
+                    <h3>Que es un sistema de control de versiones?</h3>
+                    [Es un sistema que permite registrar cambios de archivos en texto plano, asi como 'snapshots' en el tiempo y poder regresar en un tiempo en el pasado si se requiere]
+                </li>
+                <li>
+                    <h3>Cual es la diferencia entre git y github?</h3>
+                    [La diferencia es que git es el sistema de control de versiones, mientras que github es la plataforma en la nube donde se alojan los repositorios remotos que se pueden crear y actualizar con git]
+                </li>
+                <li>
+                    <h3>Cómo creo una rama en git?</h3>
+                    [Hay varias formas, la más sencilla desde la rama actual es con 'git checkout -b nombre_rama']
+                </li>
+                <li>
+                    <h3>Cómo clono un repositorio?</h3>
+                    [Fácil, desde la consola digitamos 'git clone origen_del_repositorio_a_clonar']
+                </li>
+                <li>
+                    <h3>Cómo puedo bajar los ultimos cambios de un repositorio?</h3>
+                    [La forma más común es con 'git pull' y para ser especifico a bajar cambios de una rama 'git pull origin nombre_rama']
+                </li>
+                <li>
+                    <h3>Cómo puedo gener un tag?</h3>
+                    [Esta me tocó googlearla, según mi research es con el comando 'git tag v1.x.x -m "mensaje_del_tag"']
+                </li>
+                <li>
+                    <h3>Cómo hago una mezcla de ramas?</h3>
+                    [Por ejemplo desde la rama en la que estamos actualmente, sería así 'git merge rama_con_cambios_a_mezclar']
+                </li>
+                <li>
+                    <h3>Cómo puedo moverme a un commit especifico?</h3>
+                    [Para eso necesitamos tener a la mano el hash del commit (para ver dicho hash necesitamos ver el listado de commits con 'git log'), realmente basta con una parte de ese hash para que git se fije que se trata de dicho commit, lo hacemos con 'git checkout hash_string']
+                </li>
+                <li>
+                    <h3>Cómo puedo borrar una rama?</h3>
+                    [Con 'git branch -d nombre_rama' podemos hacerlo]
+                </li>
+                <li>
+                    <h3>Cómo puedo borrar un tag?</h3>
+                    [Para borrar un tag que no ha sido publicado basta con 'git tag -d nombre_tag', pero si por el contrario ya esta arriba dicho tag entonces seria de la siguiente manera 'git push origin --delete nombre_tag', esta tampoco sabía toco hacer research...]
+                </li>
+                <li>
+                    <h3>Cómo puedo ver los cambios que estan por enviarse al repositorio?</h3>
+                    [Con 'git diff' puedo ver los cambios que se han modificado sin agregrarlos al 'stage', por el contrario si ya los agregue al 'stage' se debe adicionar el parametro cached así 'git diff --cached', pero para ver los cambios que están por enviarse basta con un 'git diff origin', con este último podemos ver la diferencia entre lo que está actualmente en el repositorio central vs. nuestros cambios locales]
+                </li>
+                <li>
+                    <h3>Para que sirve el comando <em>git remote -v?</em></h3>
+                    [Sirve para ver la url remota del origin del repositorio central, por ejemplo: la url de github.com donde esta alojado el repositorio tanto para jalar cambios (fetch), como para subirlos (push)]
+                </li>
+                <li>
+                    <h3>Cómo le digo a git cual es mi email y correo?</h3>
+                    [Siento que quisiste decir nombre y correo, esta configuración es obligatoria despues de instalar git jaja, serian dos comandos a correr para que la configuración se replique de manera global, 'git config --global user.name "Mi nombre"' y 'git config --global user.email micorreo@correo.com']
+                </li>
+                <li>
+                    <h3>Cuales son los pasos para conectar git con github?</h3>
+                    [En el caso de que el repo no cuente con un remote se lo puede definir con el siguiente comando 'git remote add origin https://github.com/user/repo.git']
+                </li>
+                <li>
+                    <h3>Cómo puedo crear un alias en git?</h3>
+                    [Desde la configuración global con el comando alias seguido por un . y el nombre del alias, por ejemplo para definir un alias simplificado del checkout 'git config --global alias.co checkout']
+                </li>
+            </ol>
+        </div>
+        <div id="footer">
+            <img height="50" src="https://repository-images.githubusercontent.com/242781977/c5441500-56ee-11ea-99dc-6a054dbe381d" alt="ticsacademy">
+        </div>
+    </div>
+</body>
+
+</html>

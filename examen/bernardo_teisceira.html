@@ -1,0 +1,96 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>.: Examen :.</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+</head>
+
+<body>
+    <div id="container">
+        <div id="cabecera">
+            <img id="logo"
+                src="https://cdn2.iconfinder.com/data/icons/seo-and-website/100/SEO_blog_optimation_article-64.png" />
+            Examen
+            <span id="tagline">Git y Github</span>
+        </div>
+        <div id="post">
+            <h1>Alumn@: Bernardo Teisceira</h1>
+            <ol>
+                <li>
+                    <h3>Que es un sistema de control de versiones?</h3>
+                    Un sistema de control de versiones, como indica su nombre es un programa que permite realizar versionado de código.
+                </li>
+                <li>
+                    <h3>Cual es la diferencia entre git y github?</h3>
+                    Git es el controlador de versiones y GitHub es una plataforma que permite alojar repositorios Git.
+                </li>
+                <li>
+                    <h3>Cómo creo una rama en git?</h3>
+                    git checkout *nombre rama nueva*
+                </li>
+                <li>
+                    <h3>Cómo clono un repositorio?</h3>
+                    git clone git@ip_del_server:nombre_repo.git
+                </li>
+                <li>
+                    <h3>Cómo puedo bajar los ultimos cambios de un repositorio?</h3>
+                    git pull origin *nombre_rama*
+                </li>
+                <li>
+                    <h3>Cómo puedo gener un tag?</h3>
+                    git tag *tag* 
+                </li>
+                <li>
+                    <h3>Cómo hago una mezcla de ramas?</h3>
+                    git merge *nombre_rama*
+                </li>
+                <li>
+                    <h3>Cómo puedo moverme a un commit especifico?</h3>
+                    git commit *hash_de_commit*
+                </li>
+                <li>
+                    <h3>Cómo puedo borrar una rama?</h3>
+                    git branch -d | -D *branch_a_remover*
+                </li>
+                <li>
+                    <h3>Cómo puedo borrar un tag?</h3>
+                    git tag -d *tag_a_borrar*
+                </li>
+                <li>
+                    <h3>Cómo puedo ver los cambios que estan por enviarse al repositorio?</h3>
+                    "git status" o "git diff" para cambios unstaged 
+                </li>
+                <li>
+                    <h3>Para que sirve el comando <em>git remote -v?</em></h3>
+                    "git remote" permite manejar repositorios. Ya sea agregando, removiendo, modificando, etc. Y "-v" es verbose.
+                </li>
+                <li>
+                    <h3>Cómo le digo a git cual es mi email y correo?</h3>
+                    git config --global user.name "John Doe"
+					git config --global user.email johndoe@example.com
+                </li>
+                <li>
+                    <h3>Cuales son los pasos para conectar git con github?</h3>
+                    cd /Users/MiUsuario/Desktop/github_folder
+					$ git clone https://github.com/testuser/test.git
+					$ cd test
+					$ git status
+					$ git add "prueba.txt"
+					$ git commit -m "test"
+					$ git remote -v
+					$ git push origin master
+                </li>
+                <li>
+                    <h3>Cómo puedo crear un alias en git?</h3>
+                    git config --global alias.hola 'echo "hola"'
+                </li>
+            </ol>
+        </div>
+        <div id="footer">
+            <img height="50" src="https://repository-images.githubusercontent.com/242781977/c5441500-56ee-11ea-99dc-6a054dbe381d" alt="ticsacademy">
+        </div>
+    </div>
+</body>
+
+</html>
